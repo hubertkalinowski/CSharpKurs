@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 
 namespace Hello
 {
@@ -10,6 +7,19 @@ namespace Hello
     {
         static void Main(string[] args)
         {
+            string name = "";
+
+            if (args.Length > 0)
+            {
+                name = args[0];
+            }
+
+            Console.WriteLine("Witaj " + name);
+
+            //foreach (string item in args)
+            //{
+            //    Console.WriteLine("Witaj " + item);
+            //}
         }
     }
 }
